@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Rockwell";
+  src: url(/rockwell/ROCK.TTF);
+}
+
+@font-face {
+  font-family: "Rockwell-lt";
+  src: url(/rockwell-light/RCKWLL.ttf);
+}
+
+@font-face {
+  font-family: "Dinpro";
+  src: url(/dinpro-black/DINPro-Black_13933.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+h1,
+li {
+  font-family: "Dinpro";
+  font-weight: 900;
+}
+
+h1 {
+  color: #850007;
+  font-size: 62px;
+}
+
+h3 {
+  font-family: "Rockwell-lt";
+  font-weight: 500;
+  font-size: 24px;
+  width: 80%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+hr {
+  border: 3px solid #242021;
+  display: flex;
+  width: 200px;
+  margin: 10px 0 30px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #c8c6c6;
+}
+
+header {
+  height: 92.5vh;
+  margin-top: 2.5vh;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #fff;
+  margin-bottom: 3vh;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  width: 100px;
+  text-align: center;
+}
+
+header nav ul .logo {
+  width: initial;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+}
+
+#about div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about div p {
+  width: 50%;
+}
+
+#about .image {
+  background: url(/assets/sample_photo-1.jpg) no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+#about .image .border {
+  width: 90%;
+  height: 90%;
+  border: #fff 3px solid;
+}
