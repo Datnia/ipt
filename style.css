@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Rockwell";
-  src: url(/rockwell/ROCK.TTF);
+  src: url(/fonts/rockwell/ROCK.TTF);
 }
 
 @font-face {
   font-family: "Rockwell-lt";
-  src: url(/rockwell-light/RCKWLL.ttf);
+  src: url(/fonts/rockwell-light/RCKWLL.ttf);
 }
 
 @font-face {
   font-family: "Dinpro";
-  src: url(/dinpro-black/DINPro-Black_13933.woff);
+  src: url(/fonts/dinpro-black/DINPro-Black_13933.woff);
 }
 
 * {
@@ -37,8 +37,20 @@ h1 {
 h3 {
   font-family: "Rockwell-lt";
   font-weight: 500;
-  font-size: 24px;
+  font-size: 28px;
   width: 80%;
+}
+
+h4 {
+  font-family: "Rockwell";
+  font-size: 24px;
+  margin: 5px 0;
+  color: #850007;
+}
+
+p {
+  font-family: "Dinpro";
+  font-weight: 100;
 }
 
 a {
@@ -89,9 +101,12 @@ header nav ul .logo {
 }
 
 section {
-  height: 100vh;
   width: 100%;
   background: #fff;
+}
+
+#about {
+  height: 100vh;
   display: flex;
 }
 
@@ -118,4 +133,27 @@ section {
   width: 90%;
   height: 90%;
   border: #fff 3px solid;
+}
+
+#team {
+  padding: 100px 0;
+}
+
+#team h1 {
+  text-align: center;
+}
+
+#team div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team div img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 0;
 }
