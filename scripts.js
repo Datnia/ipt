@@ -27,13 +27,10 @@ $(document).ready(function() {
       .fadeIn(300);
   });
   $(window).scroll(function() {
-    if (
-      $(window).scrollTop() >
-      $("#about").offset().top + $("#about").outerHeight(true)
-    ) {
-      $("#contact").fadeIn();
+    if ($(window).scrollTop() > $("#team").offset().top) {
+      $("#contact").fadeIn(300);
     } else {
-      $("#contact").hide();
+      $("#contact").fadeOut(50);
     }
   });
 });
