@@ -28,9 +28,12 @@ $(document).ready(function() {
   });
   $(window).scroll(function() {
     if ($(window).scrollTop() > $("#team").offset().top) {
-      $("#contact").fadeIn(300);
+      $("#contact").fadeIn(1500);
     } else {
       $("#contact").fadeOut(50);
     }
   });
+
+  let contactHeight = $("#contact").outerHeight(true);
+  $("#team").css("margin-bottom", contactHeight);
 });
