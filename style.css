@@ -30,13 +30,12 @@ li {
 }
 
 h1 {
-  color: #850007;
   font-size: 62px;
 }
 
 h2 {
-  font-size: 28px;
-  font-family: "rockwell-lt";
+  font-size: 54px;
+  font-family: "Dinpro";
 }
 
 h3 {
@@ -44,13 +43,21 @@ h3 {
   font-weight: 500;
   font-size: 28px;
   width: 80%;
+  color: #c8c6c6;
 }
 
 h4 {
   font-family: "Rockwell";
-  font-size: 20px;
+  font-size: 28px;
   margin: 5px 0;
-  color: #850007;
+  color: #fff;
+  font-weight: 100;
+}
+
+h5 {
+  font-family: "Rockwell";
+  font-size: 20px;
+  margin-top: -10px;
 }
 
 p {
@@ -64,9 +71,9 @@ a {
 }
 
 hr {
-  border: 3px solid #242021;
+  border: 3px solid #580000;
   display: flex;
-  width: 200px;
+  width: 150px;
   margin: 10px 0 30px;
 }
 
@@ -116,12 +123,17 @@ header nav ul .logo {
 section {
   width: 100%;
   background: #fff;
-  height: 100vh;
 }
 
 #about {
   height: 100vh;
   display: flex;
+  position: relative;
+}
+
+#about h1 {
+  color: #c8c6c6;
+  margin-top: auto;
 }
 
 #about div {
@@ -132,7 +144,37 @@ section {
   align-items: center;
 }
 
-#about div p {
+#about .bg {
+  background: #242021;
+}
+
+#about .soc-media {
+  flex-direction: row;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+}
+
+#about .soc-media div {
+  flex-grow: 1;
+  height: 250px;
+}
+
+#about .soc-media div:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#about .soc-media div:nth-child(1),
+#about .soc-media div:nth-child(3) {
+  background: #c8c6c6;
+}
+
+#about .soc-media div:nth-child(2) {
+  background: #580000;
+}
+
+#about .soc-media div:nth-child(1) #about div p {
   width: 50%;
 }
 
@@ -150,7 +192,20 @@ section {
 }
 
 #team {
-  padding: 100px 0;
+  margin-top: 200px;
+  padding-top: 100px;
+  margin-bottom: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#team hr {
+  border: 3px solid #c8c6c6;
+}
+
+#team #container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -159,6 +214,7 @@ section {
 #team h1 {
   text-align: center;
   width: 100%;
+  color: #242021;
 }
 
 #team .col {
@@ -166,25 +222,35 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#team .col {
   flex-grow: 1;
   position: relative;
+  overflow: hidden;
 }
 
-#team .col .overlay-2 {
+#team .col .overlay {
   height: 500px;
   width: 100%;
   position: absolute;
-  background: #85000763;
+}
+
+#team .col .overlay-1 {
+  background: #c8c6c6;
+}
+
+#team .col .overlay-2 {
+  background: #580000;
+}
+
+#team .col .overlay-3 {
+  background: #242021;
 }
 
 #team div img {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  opacity: 0.4;
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 #team .team-1 {
@@ -196,6 +262,78 @@ section {
   object-position: 0 20%;
 }
 
+#team .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 7px;
+  color: #fff;
+  transition: 0.3s;
+  width: 90%;
+}
+
+#team .title p {
+  padding: 5px 30px;
+  font-size: 48px;
+  font-weight: 100;
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+#team .title-2 {
+  text-align: center;
+}
+
+#team div.title-2 p {
+  position: relative;
+  bottom: 0;
+  width: 45px;
+  margin: 0 auto;
+}
+
+#team .title-3 {
+  text-align: right;
+}
+
+#team .title-3 p {
+  left: 0;
+  right: initial;
+}
+
+#team .title p:hover {
+  color: #580000;
+}
+
+#team .title p:hover {
+  cursor: pointer;
+}
+
 #team .col .col-content {
+  width: 90%;
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#team .col .col-content h4 {
+  font-family: "Dinpro";
+  font-size: 32px;
+}
+
+#team .col .col-content p {
+  margin-top: 10px;
+}
+
+#contact {
+  height: 50vh;
+  position: fixed;
+  bottom: 0;
+  z-index: -10;
   display: none;
 }
