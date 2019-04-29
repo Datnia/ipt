@@ -120,6 +120,7 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: center;
+  transition: 0.3s;
 }
 
 header nav ul {
@@ -133,10 +134,15 @@ header nav ul li {
   width: 150px;
   text-align: center;
   font-size: 28px;
+  transition: 0.1s;
 }
 
 header nav ul .logo {
   width: initial;
+}
+
+#logo img {
+  transition: 0.3s;
 }
 
 section {
@@ -278,7 +284,10 @@ section {
   object-position: 0 0;
 }
 
-#team .team-2,
+#team .team-2 {
+  object-position: 93% 93%;
+}
+
 #team .team-3 {
   object-position: 0 20%;
 }
@@ -414,8 +423,11 @@ form input {
   width: 100%;
   padding: 30px 10px;
   border: none;
-  border-bottom: none;
-  background: #5800002d;
+  background: #2420210e;
+}
+
+input[type="text"] {
+  font-family: "DINpro";
 }
 
 form input:nth-child(2) {
@@ -431,10 +443,12 @@ form textarea {
   border-radius: 5px;
   width: 100%;
   border: none;
+  background: #2420210e;
   resize: none;
-  background: #5800002d;
   padding: 30px 10px 0;
   margin-top: 10px;
+  font-family: "Dinpro-reg";
+  font-size: 16px;
 }
 
 form button {

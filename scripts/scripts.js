@@ -26,22 +26,12 @@ $(document).ready(function() {
       .next(".col-content")
       .fadeIn(300);
   });
+
   $(window).scroll(function() {
-    let navPosition = $("nav").offset().top - $(window).scrollTop();
     if ($(window).scrollTop() > $("#team").offset().top) {
       $("#contact").fadeIn(1500);
     } else {
       $("#contact").fadeOut(50);
-    }
-
-    if (navPosition <= 0) {
-      $("nav")
-        .css("top", "0")
-        .css("position", "fixed");
-    } else {
-      $("nav")
-        .css("top", "initial")
-        .css("position", "initial");
     }
   });
 
@@ -52,3 +42,12 @@ $(document).ready(function() {
     $("html, body").scrollTop($(document).height());
   });
 });
+
+setTimeout(function() {
+  console.log(
+    "%cDeveloped by Dat %cNguyen \n\n%chttp://datnguyen.io",
+    "font-size: 36px;",
+    "color: #01b435; font-size: 36px",
+    "font-size: 24px;"
+  );
+}, 1000);
