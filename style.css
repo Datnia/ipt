@@ -173,35 +173,58 @@ section {
   background: #242021;
 }
 
-#about .soc-media {
+#about .stats {
   flex-direction: row;
   margin-top: auto;
   bottom: 0;
   width: 100%;
 }
 
-#about .soc-media div {
+#about .stats div {
   flex-grow: 1;
   height: 250px;
-  opacity: 0.3;
+  opacity: 0.7;
   transition: 0.2s;
 }
 
-#about .soc-media div:hover {
-  opacity: 0.8;
-  cursor: pointer;
+#about .stats div:hover {
+  opacity: 0.9;
 }
 
-#about .soc-media div:nth-child(1),
-#about .soc-media div:nth-child(3) {
+#about .stats div h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+#about .stats div h2:nth-child(3) {
+  font-family: "Rockwell";
+  font-size: 76px;
+}
+
+#about .stats i {
+  color: #fff;
+  position: absolute;
+  z-index: -2;
+  font-size: 225px;
+  opacity: 0.6;
+}
+
+#about .stats div:nth-child(1) {
   background: #c8c6c6;
 }
 
-#about .soc-media div:nth-child(2) {
+#about .stats div:nth-child(2) {
   background: #580000;
 }
 
-#about .soc-media div:nth-child(1) #about div p {
+#about .stats div:nth-child(2) i {
+  opacity: 0.1;
+}
+
+#about .stats div:nth-child(2) {
+  color: #fff;
+}
+#about .stats div:nth-child(1) #about div p {
   width: 50%;
 }
 
@@ -286,6 +309,7 @@ section {
 
 #team .team-2 {
   object-position: 93% 93%;
+  filter: grayscale(60%);
 }
 
 #team .team-3 {
