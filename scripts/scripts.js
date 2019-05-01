@@ -27,13 +27,37 @@ $(document).ready(function() {
       .fadeIn(300);
   });
 
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > $("#team").offset().top) {
-      $("#contact").fadeIn(1500);
-    } else {
-      $("#contact").fadeOut(50);
-    }
+  let contactHeight = $("#contact").outerHeight(true);
+  $("#team").css("margin-bottom", contactHeight);
 
+  if ($(window).width() <= 1024) {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > $("#team").offset().top) {
+        $("#contact").fadeIn(1500);
+      } else {
+        $("#contact").fadeOut(50);
+      }
+    });
+  } else if ($(window).width() < 1520 || $(window).height() < 860) {
+    $(window).scroll(function() {
+      $("#team").css("margin-bottom", "0");
+      if ($(window).scrollTop() > 0) {
+        $("#contact").fadeIn(1500);
+      } else {
+        $("#contact").fadeOut(50);
+      }
+    });
+  } else {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > $("#team").offset().top) {
+        $("#contact").fadeIn(1500);
+      } else {
+        $("#contact").fadeOut(50);
+      }
+    });
+  }
+
+  $(window).scroll(function() {
     if ($(window).scrollTop() > $("#about").offset().top) {
       $(".counter").each(function() {
         var $this = $(this),
@@ -57,11 +81,53 @@ $(document).ready(function() {
     }
   });
 
-  let contactHeight = $("#contact").outerHeight(true);
-  $("#team").css("margin-bottom", contactHeight);
-
   $("a[href='#contact']").click(function() {
     $("html, body").scrollTop($(document).height());
+  });
+
+  $("#open").click(function() {
+    setTimeout(function() {
+      $("header nav ul").animate(
+        {
+          height: "100vh",
+          width: "100vw",
+          borderRadius: 0
+        },
+        100,
+        "linear"
+      );
+    }, 250);
+    $("header nav ul").animate(
+      {
+        height: "100vw",
+        width: "100vw"
+      },
+      250,
+      "linear"
+    );
+  });
+
+  $("#close").click(function() {
+    setTimeout(function() {
+      $("header nav ul").animate(
+        {
+          height: "0",
+          width: "0",
+          borderRadius: "50%"
+        },
+        250,
+        "linear"
+      );
+    }, 100);
+    $("header nav ul").animate(
+      {
+        height: "100vw",
+        width: "100vw",
+        borderRadius: "50%"
+      },
+      100,
+      "linear"
+    );
   });
 });
 
