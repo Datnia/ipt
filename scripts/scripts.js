@@ -57,6 +57,10 @@ $(document).ready(function() {
     });
   }
 
+  if ($(window).width() <= 370) {
+    $("#contact").css("margin-top", -contactHeight);
+  }
+
   $(window).scroll(function() {
     if ($(window).scrollTop() > $("#about").offset().top) {
       $(".counter").each(function() {
@@ -86,6 +90,7 @@ $(document).ready(function() {
   });
 
   $("#open").click(function() {
+    $("#close").addClass("fadeIn");
     setTimeout(function() {
       $("header nav ul").animate(
         {
@@ -108,6 +113,8 @@ $(document).ready(function() {
   });
 
   $("#close").click(function() {
+    $("#close").removeClass("fadeIn");
+
     setTimeout(function() {
       $("header nav ul").animate(
         {

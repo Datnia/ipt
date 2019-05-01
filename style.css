@@ -28,32 +28,6 @@
   }
 }
 
-@keyframes grow {
-  0% {
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-  }
-
-  50% {
-    width: 100vw;
-    height: 100vw;
-    border-radius: 50%;
-  }
-
-  60% {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
-  }
-
-  100% {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0%;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -65,14 +39,8 @@ html {
   animation: fadeIn 2s;
 }
 
-.grow {
-  animation: grow 0.7s ease-in forwards;
-}
-
-.shrink {
-  animation: grow 0.7s ease-in forwards;
-  animation-direction: reverse;
-  animation-delay: 0.1s;
+.fadeIn {
+  animation: fadeIn 3s;
 }
 
 h1,
@@ -180,6 +148,10 @@ header nav ul .logo {
 
 header nav .fa-2x {
   display: none;
+}
+
+header nav #close {
+  color: #c8c6c6;
 }
 
 .mobile-logo {
@@ -758,7 +730,27 @@ form button[type="submit"] {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+    margin-top: -5px;
+  }
   a {
     color: #c8c6c6;
   }
@@ -806,5 +798,105 @@ form button[type="submit"] {
     right: 5%;
     opacity: 0.5;
     display: block;
+  }
+
+  #about h1 {
+    padding: 0 20px;
+  }
+
+  #about .stats i {
+    font-size: 180px;
+  }
+
+  #about .stats div h2 {
+    font-size: 20px;
+  }
+
+  #about .stats div h2:nth-child(3) {
+    font-size: 62px;
+  }
+
+  #team .col {
+    width: 100%;
+    height: 250px;
+  }
+
+  #team .col .overlay {
+    height: 250px;
+  }
+
+  #team .team-2 {
+    object-position: 100% 50%;
+  }
+
+  #team div img {
+    height: 250px;
+  }
+
+  #team .title p {
+    font-size: 32px;
+  }
+
+  #team .col .col-content h4 {
+    font-size: 16px;
+  }
+
+  #team .col .col-content p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  #contact {
+    padding: 50px 0 0;
+  }
+
+  #contact .container {
+    padding: 0 20px;
+  }
+
+  form input:nth-child(2),
+  form input:nth-child(3) {
+    width: 100%;
+  }
+
+  form textarea {
+    height: 150px;
+  }
+
+  form button {
+    margin: 10px 5px 0;
+  }
+
+  form input {
+    padding: 15px 10px;
+  }
+
+  button[type="reset"] i {
+    font-size: 2.5em;
+  }
+
+  button[type="submit"] i {
+    font-size: 3.5em;
+  }
+
+  #contact .info {
+    display: none;
+  }
+
+  #contact footer {
+    padding: 50px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  #contact {
+    position: relative;
   }
 }
