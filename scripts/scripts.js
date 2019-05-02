@@ -57,6 +57,11 @@ $(document).ready(function() {
     });
   }
 
+  var bannerHeight = $(window).innerHeight();
+  if ($(window).width() <= 767) {
+    $("header").css("height", bannerHeight);
+  }
+
   if ($(window).width() <= 370) {
     $("#contact").css("margin-top", -contactHeight);
   }
