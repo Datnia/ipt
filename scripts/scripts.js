@@ -99,7 +99,7 @@ $(document).ready(function() {
     setTimeout(function() {
       $("header nav ul").animate(
         {
-          height: "100vh",
+          height: bannerHeight,
           width: "100vw",
           borderRadius: 0
         },
