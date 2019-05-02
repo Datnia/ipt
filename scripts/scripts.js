@@ -136,6 +136,16 @@ $(document).ready(function() {
       "linear"
     );
   });
+
+  $(window).resize(function() {
+    var i = 0;
+    if ($(window).outerWidth() < 1520 && i === 0) {
+      i = 1;
+    } else if ($(window).outerWidth() <= 1520 && i === 0) {
+      location.reload();
+      i = 1;
+    }
+  });
 });
 
 setTimeout(function() {
