@@ -40,7 +40,7 @@ html {
 }
 
 .fadeIn {
-  animation: fadeIn 3s;
+  animation: fadeIn 4s;
 }
 
 h1,
@@ -775,7 +775,7 @@ form button[type="submit"] {
     height: 0;
     z-index: 3;
     position: relative;
-    opacity: 0.98;
+    opacity: 0.99;
     border-radius: 50%;
   }
 
