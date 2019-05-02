@@ -169,6 +169,7 @@ section {
 
 #about {
   height: 100vh;
+  width: 100%;
   display: flex;
 }
 
@@ -246,8 +247,7 @@ section {
 }
 
 #about .image {
-  background: url(/assets/sample_photo-1.jpg) no-repeat;
-  background-size: cover;
+  background: url(/assets/sample_photo-1.jpg) 10% 50% no-repeat;
   filter: grayscale(100%);
   opacity: 0.7;
 }
@@ -396,6 +396,22 @@ section {
 #team .col .col-content p {
   margin-top: 15px;
   font-family: "Dinpro-reg";
+  overflow-y: scroll;
+  height: 370px;
+}
+
+#team .col .col-content p::-webkit-scrollbar {
+  width: 2px;
+}
+
+#team .col .col-content p::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+#team .col .col-content p::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 #contact {
@@ -639,6 +655,7 @@ form button[type="submit"] {
 
   #about .image {
     height: 50vh;
+    background-attachment: fixed;
   }
 
   #team {
@@ -681,11 +698,6 @@ form button[type="submit"] {
 
   #team div.title-2 p {
     margin-bottom: 20px;
-  }
-
-  #team .col .col-content p {
-    overflow-y: scroll;
-    height: 500px;
   }
 
   #contact {
@@ -759,6 +771,34 @@ form button[type="submit"] {
 
   #about .stats div {
     height: 200px;
+  }
+
+  #about .stats i {
+    font-size: 180px;
+  }
+
+  #about .stats div h2 {
+    font-size: 20px;
+  }
+
+  #about .stats div h2:nth-child(3) {
+    font-size: 62px;
+  }
+
+  #about .stats div:nth-child(2) i {
+    font-size: 160px;
+  }
+
+  #team .col {
+    height: 250px;
+  }
+
+  #team .col .overlay {
+    height: 250px;
+  }
+
+  #team .team-2 {
+    object-position: 100% 100%;
   }
 }
 
@@ -846,6 +886,10 @@ form button[type="submit"] {
 
   #about .stats div h2:nth-child(3) {
     font-size: 62px;
+  }
+
+  #about .stats div:nth-child(2) i {
+    font-size: 160px;
   }
 
   #team .col {
