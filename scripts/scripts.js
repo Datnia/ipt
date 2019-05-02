@@ -62,6 +62,10 @@ $(document).ready(function() {
     $("header").css("height", bannerHeight);
   }
 
+  if ($(window).width() <= 767 && $(window).width() > $(window).height()) {
+    $("#contact").css("margin-top", -contactHeight);
+  }
+
   if ($(window).width() <= 370) {
     $("#contact").css("margin-top", -contactHeight);
   }
@@ -152,6 +156,17 @@ $(document).ready(function() {
     }
   });
 });
+
+window.onorientationchange = function() {
+  var orientation = window.orientation;
+  switch (orientation) {
+    case 0:
+    case 90:
+    case -90:
+      window.location.reload();
+      break;
+  }
+};
 
 setTimeout(function() {
   console.log(

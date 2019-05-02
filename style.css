@@ -730,6 +730,29 @@ form button[type="submit"] {
   }
 }
 
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+  #about {
+    height: initial;
+  }
+
+  #about .bg {
+    padding-top: 50px;
+    height: initial;
+  }
+
+  #about .bg h3 {
+    padding-bottom: 50px;
+  }
+
+  #about .image {
+    height: 100vh;
+  }
+
+  #about .stats div {
+    height: 200px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 36px;
@@ -885,6 +908,12 @@ form button[type="submit"] {
 
   #contact footer {
     padding: 50px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  #contact {
+    position: relative;
   }
 }
 
