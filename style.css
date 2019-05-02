@@ -381,10 +381,10 @@ section {
 }
 
 #team .col .col-content {
-  width: 90%;
+  width: 80%;
   display: none;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #fff;
 }
 
@@ -394,9 +394,7 @@ section {
 }
 
 #team .col .col-content p {
-  /* overflow-y: scroll;
-  height: 150px; */
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: "Dinpro-reg";
 }
 
@@ -687,8 +685,9 @@ form button[type="submit"] {
 
   #team .col .col-content p {
     overflow-y: scroll;
-    height: 170px;
+    height: 500px;
   }
+
   #contact {
     position: fixed;
     z-index: -10;
@@ -876,7 +875,9 @@ form button[type="submit"] {
 
   #team .col .col-content p {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 165px;
   }
 
   #contact {
