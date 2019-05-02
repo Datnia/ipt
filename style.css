@@ -225,6 +225,10 @@ section {
   opacity: 0.6;
 }
 
+#about .stats div:nth-child(2) i {
+  font-size: 195px;
+}
+
 #about .stats div:nth-child(1) {
   background: #c8c6c6;
 }
@@ -390,6 +394,8 @@ section {
 }
 
 #team .col .col-content p {
+  /* overflow-y: scroll;
+  height: 150px; */
   margin-top: 10px;
   font-family: "Dinpro-reg";
 }
@@ -679,6 +685,10 @@ form button[type="submit"] {
     margin-bottom: 20px;
   }
 
+  #team .col .col-content p {
+    overflow-y: scroll;
+    height: 170px;
+  }
   #contact {
     position: fixed;
     z-index: -10;
