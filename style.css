@@ -58,8 +58,8 @@ h3 {
   font-family: "Rockwell-lt";
   font-weight: 500;
   font-size: 28px;
-  width: 80%;
   color: #c8c6c6;
+  width: 80%;
 }
 
 h4 {
@@ -121,13 +121,11 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  transition: 0.3s;
 }
 
 header nav ul {
   display: flex;
   list-style: none;
-  justify-content: center;
   align-items: center;
 }
 
@@ -135,7 +133,6 @@ header nav ul li {
   width: 150px;
   text-align: center;
   font-size: 28px;
-  transition: 0.1s;
 }
 
 header nav ul .logo {
@@ -154,10 +151,6 @@ header nav #close {
   display: none;
 }
 
-#logo img {
-  transition: 0.3s;
-}
-
 section {
   width: 100%;
   background: #fff;
@@ -165,7 +158,6 @@ section {
 
 #about {
   height: 100vh;
-  width: 100%;
   display: flex;
 }
 
@@ -311,12 +303,12 @@ section {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  opacity: 0.5;
   transition: 0.3s;
+  opacity: 0.5;
 }
 
 #team .team-1 {
-  object-position: 0 0;
+  object-position: 50% 50%;
 }
 
 #team .team-2 {
@@ -325,7 +317,7 @@ section {
 }
 
 #team .team-3 {
-  object-position: 0 20%;
+  object-position: 0 40%;
 }
 
 #team .title {
@@ -905,8 +897,16 @@ form button[type="submit"] {
     height: 250px;
   }
 
+  #team .team-1 {
+    object-position: 50% 20%;
+  }
+
   #team .team-2 {
     object-position: 100% 30%;
+  }
+
+  #team .team-3 {
+    object-position: 0% 30%;
   }
 
   #team div img {
