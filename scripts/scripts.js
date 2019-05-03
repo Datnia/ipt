@@ -100,6 +100,10 @@ $(document).ready(function() {
     $("html, body").scrollTop($(document).height());
   });
 
+  $("#contact").click(function() {
+    $("html, body").scrollTop($(document).height());
+  });
+
   $("#open").click(function() {
     $("#close")
       .delay(400)
