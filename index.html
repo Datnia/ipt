@@ -12,7 +12,10 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Impact Performance Training</title>
   </head>
   <body>
@@ -21,17 +24,30 @@
         <source src="/video/Boxing-gym.mp4" type="video/mp4" />
         <source src="/video/Boxing-gym.ogv" type="video/ogv" />
       </video>
-      <nav>
+      <nav
+        data-aos="fade"
+        data-aos-delay="500"
+        data-aos-duration="300"
+        data-aos-easing="ease-in"
+      >
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
+          <li data-aos="fade" data-aos-delay="1200" data-aos-duration="500">
+            <a href="#">HOME</a>
+          </li>
+          <li data-aos="fade" data-aos-delay="900" data-aos-duration="500">
+            <a href="#about">ABOUT</a>
+          </li>
           <li class="logo">
             <div id="logo">
               <a href="#"><img src="/assets/logo.png" alt="ipt-logo"/></a>
             </div>
           </li>
-          <li><a href="#team">TEAM</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li data-aos="fade" data-aos-delay="900" data-aos-duration="500">
+            <a href="#team">TEAM</a>
+          </li>
+          <li data-aos="fade" data-aos-delay="1200" data-aos-duration="500">
+            <a href="#contact">CONTACT</a>
+          </li>
           <i id="close" class="fas fa-times-circle fa-2x"></i>
         </ul>
         <div class="mobile-logo">
@@ -42,9 +58,9 @@
     </header>
     <section id="about">
       <div class="bg">
-        <h1>Impact Performance Training</h1>
-        <hr />
-        <h3>
+        <h1 data-aos="fade-up">Impact Performance Training</h1>
+        <hr data-aos="zoom-in" data-aos-delay="600" />
+        <h3 data-aos="fade-up" data-aos-delay="200">
           IPT (Impact Performace Training) is a non-profit organization
           dedicated to educating those on the benefits of exercise and a
           healthier lifestyle in a effort to prevent and combat CV

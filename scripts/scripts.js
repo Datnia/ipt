@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  AOS.init();
+
   $(".col").mouseenter(function() {
     $(".col img").css("opacity", "0");
     $("img", this)
@@ -99,7 +101,9 @@ $(document).ready(function() {
   });
 
   $("#open").click(function() {
-    $("#close").addClass("fadeIn");
+    $("#close")
+      .delay(400)
+      .fadeIn();
     setTimeout(function() {
       $("header nav ul").animate(
         {
@@ -122,7 +126,7 @@ $(document).ready(function() {
   });
 
   $("#close").click(function() {
-    $("#close").removeClass("fadeIn");
+    $("#close").fadeOut();
 
     setTimeout(function() {
       $("header nav ul").animate(
