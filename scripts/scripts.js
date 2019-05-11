@@ -1,6 +1,10 @@
 $(document).ready(function() {
   AOS.init();
 
+  setTimeout(function() {
+    $("video").fadeTo(1500, 0.6);
+  }, 1500);
+
   $(".col").mouseenter(function() {
     $(".col img").css("opacity", "0");
     $("img", this)
@@ -30,9 +34,12 @@ $(document).ready(function() {
   });
 
   let contactHeight = $("#contact").outerHeight(true);
-  $("#team").css("margin-bottom", contactHeight);
+  $("#events, #home, .post").css("margin-bottom", contactHeight);
 
-  if ($(window).width() <= 1024) {
+  if ($(window).width() <= 1024 && $(window).width() > 767) {
+    $("#events").css("margin-bottom", 0);
+  }
+  if ($(window).width() <= 768) {
     $(window).scroll(function() {
       if ($(window).scrollTop() > $("#team").offset().top) {
         $("#contact").fadeIn(1500);
@@ -42,7 +49,7 @@ $(document).ready(function() {
     });
   } else if ($(window).width() < 1520 || $(window).height() < 860) {
     $(window).scroll(function() {
-      $("#team").css("margin-bottom", "0");
+      $("#events, #home, .post").css("margin-bottom", "0");
       if ($(window).scrollTop() > 0) {
         $("#contact").fadeIn(1500);
       } else {
@@ -51,7 +58,9 @@ $(document).ready(function() {
     });
   } else {
     $(window).scroll(function() {
-      if ($(window).scrollTop() > $("#team").offset().top) {
+      if (
+        $(window).scrollTop() > $("#events, #events-index, .post").offset().top
+      ) {
         $("#contact").fadeIn(1500);
       } else {
         $("#contact").fadeOut(50);
@@ -62,10 +71,6 @@ $(document).ready(function() {
   var bannerHeight = $(window).innerHeight();
   if ($(window).width() <= 767) {
     $("header").css("height", bannerHeight);
-  }
-
-  if ($(window).width() <= 767 && $(window).width() > $(window).height()) {
-    $("#contact").css("margin-top", -contactHeight);
   }
 
   if ($(window).width() <= 370) {
@@ -97,10 +102,6 @@ $(document).ready(function() {
   });
 
   $("a[href='#contact']").click(function() {
-    $("html, body").scrollTop($(document).height());
-  });
-
-  $("#contact").click(function() {
     $("html, body").scrollTop($(document).height());
   });
 
@@ -162,6 +163,20 @@ $(document).ready(function() {
       location.reload();
       i = 1;
     }
+  });
+
+  $(".logo-slider").slick({
+    speed: 7000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    prevArrow: 0,
+    nextArrow: 0,
+    pauseOnFocus: false,
+    pauseOnHover: false
   });
 });
 

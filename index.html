@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="assets/IPT_Fav.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/slick.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -14,10 +15,17 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="/scripts/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Impact Performance Training</title>
   </head>
+  <style>
+    html,
+    body {
+      animation: fadeIn 1s;
+    }
+  </style>
   <body>
     <header>
       <video muted autoplay loop>
@@ -27,10 +35,10 @@
       <nav>
         <ul>
           <li data-aos="fade" data-aos-delay="1200" data-aos-duration="500">
-            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li data-aos="fade" data-aos-delay="900" data-aos-duration="500">
-            <a href="#about">ABOUT</a>
+            <a href="#team">TEAM</a>
           </li>
           <li class="logo">
             <div
@@ -44,7 +52,7 @@
             </div>
           </li>
           <li data-aos="fade" data-aos-delay="900" data-aos-duration="500">
-            <a href="#team">TEAM</a>
+            <a href="events.html">EVENTS</a>
           </li>
           <li data-aos="fade" data-aos-delay="1200" data-aos-duration="500">
             <a href="#contact">CONTACT</a>
@@ -89,7 +97,12 @@
     <section id="team">
       <h1 data-aos="fade-up">The Team</h1>
       <hr data-aos="zoom-in" data-aos-delay="300" />
-      <div id="container" data-aos="fade-up" data-aos-delay="500">
+      <div
+        id="container"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="500"
+      >
         <div class="col">
           <div class="overlay overlay-1"></div>
           <img src="/assets/IPT_Xavier.jpg" class="team-1" alt="team-1" />
@@ -174,7 +187,7 @@
         </div>
         <div class="col">
           <div class="overlay overlay-3"></div>
-          <img src="/assets/IPT_.jpg" class="team-3" alt="team-3" />
+          <img src="/assets/IPT_CJ.jpg" class="team-3" alt="team-3" />
           <div class="title title-3">
             <h2>
               CARL<br />
@@ -211,6 +224,29 @@
               unhealthy life choices.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section data-aos="fade-up" id="events">
+      <h1>Find Us</h1>
+      <hr />
+      <div data-aos="fade-up" data-aos-delay="200" class="container">
+        <div>
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li><b>05/30 </b>-<i> 5k Spartan Race</i> | Washington, DC</li>
+            <li>
+              <b>06/02 </b>-<i> Paint Branch High School Conference</i> |
+              Burtonsville, MD
+            </li>
+            <li>
+              <b>06/15 </b>-<i> American Diabetes Association Fundraiser</i> |
+              Laurel, MD
+            </li>
+          </ul>
+        </div>
+        <div class="events-banner">
+          <a href="events.html">VIEW ALL OF OUR EVENTS</a>
         </div>
       </div>
     </section>
@@ -251,7 +287,6 @@
               <div>
                 <h4>Address:</h4>
                 <p>
-                  Impact Performance Training <br />
                   123 Main Street <br />
                   Laurel, MD 20000
                 </p>
@@ -277,18 +312,25 @@
                 <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
               </div>
             </div>
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe
-                  width="100%"
-                  height="400"
-                  id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=impact%20performance%20training&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                ></iframe>
+            <h2>Affiliations</h2>
+            <div class="logo-slider">
+              <div class="item">
+                <img src="/assets/partner-1.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="/assets/partner-2.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="/assets/partner-3.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="/assets/partner-4.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="/assets/partner-5.png" alt="" />
+              </div>
+              <div class="item">
+                <img src="/assets/partner-6.png" alt="" />
               </div>
             </div>
           </div>

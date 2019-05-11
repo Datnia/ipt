@@ -1,0 +1,23 @@
+#logo-slider {
+  position: relative;
+}
+
+#logo-slider .MS-content {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+#logo-slider .MS-content .item {
+  display: inline-block; /* required */
+  width: 20%; /* required * Determines number of visible slides */
+  position: relative; /* required */
+  vertical-align: baseline; /* required */
+  height: 100%; /* recommended */
+  white-space: normal; /* recommended */
+}
+
+#logo-slider .MS-content .item img {
+  width: 100%;
+  height: 100%;
+}
