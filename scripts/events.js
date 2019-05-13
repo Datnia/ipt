@@ -33,7 +33,7 @@ $(document).ready(function() {
   });
 
   if ($(window).width() <= 850) {
-    $("#index-close, #home").click(function() {
+    $("#index-close, #home, .post").click(function() {
       $("#index-close").fadeOut();
       $("#logo img").fadeTo("fast", 0);
 

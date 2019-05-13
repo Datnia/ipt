@@ -34,16 +34,6 @@
   }
 
   to {
-    width: 275px;
-  }
-}
-
-@keyframes slideInMobile {
-  from {
-    width: 0;
-  }
-
-  to {
     width: 225px;
   }
 }
