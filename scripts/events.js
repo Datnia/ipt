@@ -22,7 +22,7 @@ $(document).ready(function() {
       .delay(500)
       .fadeIn();
     $("nav").animate({
-      width: "80%"
+      width: "70%"
     });
     $("#logo img")
       .delay(200)

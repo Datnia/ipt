@@ -99,6 +99,7 @@ section {
 #home .major h3 {
   color: #242021;
   line-height: 1.4;
+  font-size: 1.5vw;
 }
 
 #home .minor {
@@ -124,6 +125,7 @@ section {
   top: 0;
   filter: blur(1px);
   background-size: cover;
+  background-position: 10% 50%;
 }
 
 #home .minor > * {
@@ -132,7 +134,7 @@ section {
 
 #home div h2 {
   font-family: "Rockwell-lt";
-  font-size: 28px;
+  font-size: 1.5vw;
   width: 75%;
   margin: 100px 0 0;
   color: #000;
@@ -423,12 +425,17 @@ section {
     width: 100%;
   }
 
+  #home .major h3 {
+    font-size: 26px;
+  }
+
   #home .minor {
     padding: 200px 0;
   }
 
   #home .minor h2 {
     margin: 100px 0 50px;
+    font-size: 26px;
   }
 
   #home .filter {
@@ -589,14 +596,26 @@ section {
     width: initial;
   }
 
+  #home .major h3 {
+    font-size: 20px;
+  }
+
   #home .filter button {
     font-size: 12px;
     margin: 5px 0;
   }
 
+  #events-index {
+    margin-top: 50px;
+  }
+
   #events-index .event {
     width: 90%;
     margin: 20px 0;
+  }
+
+  .event-bg {
+    height: 200px;
   }
 
   #contact {
