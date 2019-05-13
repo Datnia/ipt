@@ -16,7 +16,6 @@
       crossorigin="anonymous"
     />
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <script src="/scripts/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Impact Performance Training - Events</title>
   </head>
@@ -28,6 +27,12 @@
     @media only screen and (max-width: 1024px) {
       nav {
         animation: slideInMobile 1s ease-out;
+      }
+    }
+
+    @media only screen and (max-width: 850px) {
+      nav {
+        animation: none;
       }
     }
   </style>
@@ -63,6 +68,10 @@
         <li>Event 10</li>
       </ul>
     </nav>
+    <div data-aos="fade" data-aos-delay="1000" class="mobile-nav">
+      <i id="index-open" class="fas fa-arrow-circle-right fa-2x"></i>
+    </div>
+    <i id="index-close" class="fas fa-times-circle fa-2x"></i>
 
     <section id="home">
       <div
@@ -325,5 +334,6 @@
     </section>
     <script src="/scripts/scripts.js"></script>
     <script src="/scripts/events.js"></script>
+    <script src="/scripts/slick.min.js"></script>
   </body>
 </html>

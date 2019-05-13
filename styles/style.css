@@ -734,6 +734,10 @@ form button[type="submit"] {
     font-size: 26px;
   }
 
+  hr {
+    width: 50px;
+  }
+
   header nav ul li {
     font-size: 22px;
     width: 100px;
@@ -950,6 +954,7 @@ form button[type="submit"] {
     font-size: 14px;
     margin-top: -5px;
   }
+
   a {
     color: #c8c6c6;
   }
@@ -957,11 +962,16 @@ form button[type="submit"] {
   header nav {
     align-items: center;
   }
+
   header nav ul li {
     width: 100%;
     color: #fff;
     padding: 20px 0;
     font-size: 36px;
+  }
+
+  header nav ul li:nth-child(4) {
+    margin: 0;
   }
 
   header nav ul {
@@ -996,6 +1006,7 @@ form button[type="submit"] {
     top: 5%;
     right: 5%;
     opacity: 0.5;
+    color: #242021;
     display: block;
   }
 
