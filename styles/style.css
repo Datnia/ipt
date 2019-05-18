@@ -613,9 +613,9 @@ form button[type="submit"] {
 
 #contact .info .info-wrapper {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin: 0 auto;
 }
 
 #contact .info .info-content {

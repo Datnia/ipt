@@ -243,10 +243,16 @@ section {
   justify-content: space-evenly;
 }
 
+@supports (-ms-accelerator: true) {
+  #events-index .container {
+    justify-content: space-around;
+  }
+}
+
 #events-index .event {
   width: 30%;
   position: relative;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 .event-bg {
