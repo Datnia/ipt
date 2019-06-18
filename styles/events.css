@@ -223,7 +223,7 @@ section {
 }
 
 #home .filter button:hover {
-  background: #5800007e;
+  background: rgba(88, 0, 0, 0.4);
   color: #fff;
 }
 
@@ -243,7 +243,7 @@ section {
   justify-content: space-evenly;
 }
 
-@supports (-ms-accelerator: true) {
+@supports (-ms-ime-align: auto) {
   #events-index .container {
     justify-content: space-around;
   }
@@ -252,7 +252,7 @@ section {
 #events-index .event {
   width: 30%;
   position: relative;
-  margin: 50px auto;
+  margin: 50px 0;
 }
 
 .event-bg {

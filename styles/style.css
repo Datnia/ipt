@@ -481,7 +481,7 @@ section {
 }
 
 #events .events-banner a:hover {
-  background: #5800007e;
+  background: rgba(88, 0, 0, 0.4);
   transition: 0.3s;
 }
 
