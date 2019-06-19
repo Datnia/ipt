@@ -215,7 +215,7 @@ section {
 }
 
 #home .filter button {
-  width: 12vw;
+  width: 14vw;
   background: transparent;
   border: #580000 2px solid;
   padding: 20px 0;
@@ -408,7 +408,7 @@ section {
   }
 
   #home .minor {
-    padding: 200px 0;
+    padding: 150px 0 200px;
   }
 
   #home .minor h2 {
