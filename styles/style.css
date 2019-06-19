@@ -422,6 +422,7 @@ section {
   padding: 200px 0 100px;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 #events h1 {
@@ -1117,7 +1118,7 @@ form button[type='submit'] {
   }
 
   form textarea {
-    height: 150px;
+    height: 100px;
   }
 
   form button {
