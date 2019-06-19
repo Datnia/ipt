@@ -2,96 +2,94 @@ $(document).ready(function() {
   AOS.init();
 
   setTimeout(function() {
-    $("video").fadeTo(1500, 0.6);
+    $('video').fadeTo(1500, 0.6);
   }, 1500);
 
-  $(".col").mouseenter(function() {
-    $(".col img").css("opacity", "0");
-    $("img", this)
-      .css("opacity", ".5")
-      .css("transform", "scale(1.1)");
-    $(".col .title").css("opacity", ".2");
-    $(".title", this).css("opacity", "1");
-    $(".title p", this).css("opacity", "1");
+  $('.col').mouseenter(function() {
+    $('.col img').css('opacity', '0');
+    $('img', this)
+      .css('opacity', '.5')
+      .css('transform', 'scale(1.1)');
+    $('.col .title').css('opacity', '.2');
+    $('.title', this).css('opacity', '1');
+    $('.title p', this).css('opacity', '1');
   });
-  $(".col").mouseleave(function() {
-    $(".col img")
-      .css("opacity", ".5")
-      .css("transform", "scale(1)");
-    $(".col .title").css("opacity", "1");
-    $(".col-content").fadeOut(300);
-    $(".title p", this).css("opacity", "0");
+  $('.col').mouseleave(function() {
+    $('.col img')
+      .css('opacity', '.5')
+      .css('transform', 'scale(1)');
+    $('.col .title').css('opacity', '1');
+    $('.col-content').fadeOut(300);
+    $('.title p', this).css('opacity', '0');
   });
-  $("#team .title p").click(function() {
+  $('#team .title p').click(function() {
     let x = $(this).parent();
-    $(".col img").css("opacity", "0");
+    $('.col img').css('opacity', '0');
     $(this)
-      .closest(".title")
-      .css("opacity", "0");
+      .closest('.title')
+      .css('opacity', '0');
     $(x)
-      .next(".col-content")
+      .next('.col-content')
       .fadeIn(300);
   });
 
-  let contactHeight = $("#contact").outerHeight(true);
+  let contactHeight = $('#contact').outerHeight(true);
 
-  $("#events, #home, .post").css("margin-bottom", contactHeight);
+  $('#events').css('margin-bottom', contactHeight);
 
   if ($(window).width() <= 1024 && $(window).width() > 767) {
-    $("#events").css("margin-bottom", 0);
+    $('#events').css('margin-bottom', 0);
   }
   if ($(window).width() <= 768) {
     $(window).scroll(function() {
-      if (
-        $(window).scrollTop() > $("#team, #events-index, .post").offset().top
-      ) {
-        $("#contact").fadeIn(1500);
+      if ($(window).scrollTop() > $('#team').offset().top) {
+        $('#contact').fadeIn(1500);
       } else {
-        $("#contact").fadeOut(50);
+        $('#contact').fadeOut(50);
       }
     });
   } else if ($(window).width() < 1520 || $(window).height() < 860) {
     $(window).scroll(function() {
-      $("#events, #home, .post").css("margin-bottom", "0");
+      $('#events').css('margin-bottom', '0');
       if ($(window).scrollTop() > 0) {
-        $("#contact").fadeIn(1500);
+        $('#contact').fadeIn(1500);
       } else {
-        $("#contact").fadeOut(50);
+        $('#contact').fadeOut(50);
       }
     });
   } else {
     $(window).scroll(function() {
       if (
-        $(window).scrollTop() > $("#events, #events-index, .post").offset().top
+        $(window).scrollTop() > $('#events, #events-index, .post').offset().top
       ) {
-        $("#contact").fadeIn(1500);
+        $('#contact').fadeIn(1500);
       } else {
-        $("#contact").fadeOut(50);
+        $('#contact').fadeOut(50);
       }
     });
   }
 
   var bannerHeight = $(window).innerHeight();
   if ($(window).width() <= 767) {
-    $("header").css("height", bannerHeight);
+    $('header').css('height', bannerHeight);
   }
 
   if ($(window).width() <= 370) {
-    $("#contact").css("margin-top", -contactHeight);
+    $('#contact').css('margin-top', -contactHeight);
   }
 
   $(window).scroll(function() {
-    if ($(window).scrollTop() > $("#about").offset().top) {
-      $(".counter").each(function() {
+    if ($(window).scrollTop() > $('#about').offset().top) {
+      $('.counter').each(function() {
         var $this = $(this),
-          countTo = $this.attr("data-count");
+          countTo = $this.attr('data-count');
         $({ countNum: $this.text() }).animate(
           {
             countNum: countTo
           },
           {
             duration: 2000,
-            easing: "linear",
+            easing: 'linear',
             step: function() {
               $this.text(Math.floor(this.countNum));
             },
@@ -105,56 +103,56 @@ $(document).ready(function() {
   });
 
   $("a[href='#contact']").click(function() {
-    $("html, body").scrollTop($(document).height());
+    $('html, body').scrollTop($(document).height());
   });
 
-  $("#open").click(function() {
-    $("#close")
+  $('#open').click(function() {
+    $('#close')
       .delay(400)
       .fadeIn();
     setTimeout(function() {
-      $("header nav ul").animate(
+      $('header nav ul').animate(
         {
           height: bannerHeight,
-          width: "100vw",
+          width: '100vw',
           borderRadius: 0
         },
         100,
-        "linear"
+        'linear'
       );
     }, 250);
-    $("header nav ul").animate(
+    $('header nav ul').animate(
       {
-        height: "100vw",
-        width: "100vw"
+        height: '100vw',
+        width: '100vw'
       },
       250,
-      "linear"
+      'linear'
     );
   });
 
-  $("#close").click(function() {
-    $("#close").fadeOut();
+  $('#close').click(function() {
+    $('#close').fadeOut();
 
     setTimeout(function() {
-      $("header nav ul").animate(
+      $('header nav ul').animate(
         {
-          height: "0",
-          width: "0",
-          borderRadius: "50%"
+          height: '0',
+          width: '0',
+          borderRadius: '50%'
         },
         250,
-        "linear"
+        'linear'
       );
     }, 100);
-    $("header nav ul").animate(
+    $('header nav ul').animate(
       {
-        height: "100vw",
-        width: "100vw",
-        borderRadius: "50%"
+        height: '100vw',
+        width: '100vw',
+        borderRadius: '50%'
       },
       100,
-      "linear"
+      'linear'
     );
   });
 
@@ -167,11 +165,11 @@ $(document).ready(function() {
       i = 1;
     }
   });
-  $(".logo-slider").slick({
+  $('.logo-slider').slick({
     speed: 7000,
     autoplay: true,
     autoplaySpeed: 0,
-    cssEase: "linear",
+    cssEase: 'linear',
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
@@ -194,8 +192,8 @@ window.onorientationchange = function() {
 };
 
 console.log(
-  "%cDeveloped by Dat %cNguyen \n\n%chttp://datnguyen.io",
-  "font-size: 36px;",
-  "color: #01b435; font-size: 36px",
-  "font-size: 24px;"
+  '%cDeveloped by Dat %cNguyen \n\n%chttp://datnguyen.io',
+  'font-size: 36px;',
+  'color: #01b435; font-size: 36px',
+  'font-size: 24px;'
 );
