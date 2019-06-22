@@ -173,13 +173,9 @@ section {
   justify-content: center;
 }
 
-#about {
-  height: 100vh;
-}
-
 #about h1 {
   color: #c8c6c6;
-  margin-top: auto;
+  padding: 3em 0 0;
   text-align: center;
 }
 
@@ -189,6 +185,10 @@ section {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+#about div h3 {
+  padding-bottom: 8em;
 }
 
 #about .bg {
@@ -744,16 +744,16 @@ form button[type='submit'] {
   }
 
   #about {
+    margin-top: -2px;
     flex-wrap: wrap;
-    height: 150vh;
+  }
+
+  #about div h3 {
+    padding-bottom: 5em;
   }
 
   #about div {
     width: 100%;
-  }
-
-  #about .bg {
-    height: 100vh;
   }
 
   #about .image {
