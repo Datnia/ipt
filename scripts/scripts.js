@@ -1,6 +1,16 @@
 $(document).ready(function() {
   AOS.init();
 
+  $('#info .content').click(function() {
+    let q = $(this).children('p');
+    if ($(q).hasClass('show')) {
+      $(q).removeClass('show');
+    } else {
+      $('#info .major .content p').removeClass('show');
+      $(q).addClass('show');
+    }
+  });
+
   setTimeout(function() {
     $('video').fadeTo(1500, 0.6);
   }, 1500);
