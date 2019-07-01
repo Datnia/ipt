@@ -772,7 +772,7 @@ form button[type='submit'] {
 
   hr {
     width: 50px;
-    margin: 5px 0 10px;
+    margin: 5px 0 20px;
   }
 
   header nav ul li {
@@ -805,6 +805,9 @@ form button[type='submit'] {
     height: 50vh;
   }
 
+  #info #container h2 {
+    font-size: 24px;
+  }
   #team {
     margin-top: 200px;
     padding-top: 0;
