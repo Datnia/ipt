@@ -47,7 +47,6 @@ $(document).ready(function() {
 
   $('#events').css('margin-bottom', contactHeight);
 
- 
   if ($(window).width() <= 768) {
     $(window).scroll(function() {
       if ($(window).scrollTop() > $('#team').offset().top) {
@@ -66,6 +65,10 @@ $(document).ready(function() {
         $('#contact').fadeOut(50);
       }
     });
+  }
+
+  if ($(window).width() <= 768 && window.innerHeight < window.innerWidth) {
+    $('#events').css('margin-bottom', '0');
   }
 
   var bannerHeight = $(window).innerHeight();
