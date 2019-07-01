@@ -47,21 +47,10 @@ $(document).ready(function() {
 
   $('#events').css('margin-bottom', contactHeight);
 
-  if ($(window).width() <= 1024 && $(window).width() > 767) {
-    $('#events').css('margin-bottom', 0);
-  }
+ 
   if ($(window).width() <= 768) {
     $(window).scroll(function() {
       if ($(window).scrollTop() > $('#team').offset().top) {
-        $('#contact').fadeIn(1500);
-      } else {
-        $('#contact').fadeOut(50);
-      }
-    });
-  } else if ($(window).width() < 1520 || $(window).height() < 860) {
-    $(window).scroll(function() {
-      $('#events').css('margin-bottom', '0');
-      if ($(window).scrollTop() > 0) {
         $('#contact').fadeIn(1500);
       } else {
         $('#contact').fadeOut(50);
@@ -202,7 +191,7 @@ window.onorientationchange = function() {
 };
 
 console.log(
-  '%cDeveloped by Dat %cNguyen \n\n%chttp://datnguyen.io',
+  '%cDeveloped by Dat %cNguyen \n\n%chttps://datnguyen.io',
   'font-size: 36px;',
   'color: #01b435; font-size: 36px',
   'font-size: 24px;'
