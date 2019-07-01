@@ -67,7 +67,7 @@ $(document).ready(function() {
     });
   }
 
-  if ($(window).width() <= 768 && window.innerHeight < window.innerWidth) {
+  if ($(window).width() <= 850 && window.innerHeight < window.innerWidth) {
     $('#events').css('margin-bottom', '0');
   }
 

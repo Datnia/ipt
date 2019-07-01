@@ -974,10 +974,6 @@ form button[type='submit'] {
     height: 250px;
   }
 
-  #team .team-2 {
-    object-position: 100% 100%;
-  }
-
   #team .col .col-content p {
     height: 135px;
   }
