@@ -1182,7 +1182,7 @@ form button[type='submit'] {
   }
 
   #contact {
-    padding: 20px 10px 50px;
+    padding: 50px 10px;
     position: fixed;
     z-index: -10;
   }
