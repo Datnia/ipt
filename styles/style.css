@@ -1224,6 +1224,10 @@ form button[type='submit'] {
     padding: 10px;
     height: 50px;
   }
+
+  ::placeholder {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
