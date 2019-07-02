@@ -1110,7 +1110,7 @@ form button[type='submit'] {
   }
 
   #info .major .content h5 {
-    padding: 0 5px;
+    padding-right: 5px;
   }
 
   #team .team-1 {
