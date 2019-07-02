@@ -167,19 +167,6 @@ $(document).ready(function() {
       i = 1;
     }
   });
-  $('.logo-slider').slick({
-    speed: 7000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    prevArrow: 0,
-    nextArrow: 0,
-    pauseOnFocus: false,
-    pauseOnHover: false
-  });
 });
 
 window.onorientationchange = function() {
