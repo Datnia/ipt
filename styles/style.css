@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
   src: url(/fonts/rockwell/ROCK.TTF);
 }
 
 @font-face {
-  font-family: 'Rockwell-lt';
+  font-family: "Rockwell-lt";
   src: url(/fonts/rockwell-light/RCKWLL.ttf);
 }
 
 @font-face {
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
   src: url(/fonts/dinpro-black/DINPro-Black_13933.woff);
 }
 
 @font-face {
-  font-family: 'Dinpro-reg';
+  font-family: "Dinpro-reg";
   src: url(/fonts/dinpro-reg/DINPro-Regular.otf);
 }
 
@@ -50,7 +50,7 @@ html {
 
 h1,
 li {
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
   font-weight: 900;
 }
 
@@ -62,11 +62,11 @@ h1 {
 
 h2 {
   font-size: 54px;
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
 }
 
 h3 {
-  font-family: 'Rockwell-lt';
+  font-family: "Rockwell-lt";
   font-weight: 500;
   font-size: 28px;
   color: #c8c6c6;
@@ -75,7 +75,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
   font-size: 28px;
   margin: 5px 0;
   color: #fff;
@@ -84,20 +84,20 @@ h4 {
 }
 
 h5 {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
   font-size: 20px;
   margin-top: -10px;
 }
 
 p {
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
   font-weight: 100;
 }
 
 a {
   color: #242021;
   text-decoration: none;
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
 }
 
 ul {
@@ -224,7 +224,7 @@ section {
 }
 
 #about .stats div h2:nth-child(3) {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
   font-size: 76px;
 }
 
@@ -317,17 +317,18 @@ section {
 
 #info .major .content h5 i {
   color: #c8c6c6;
+  opacity: 0;
 }
 
 #info .major .content p {
   max-height: 0;
-  font-family: 'Dinpro-reg';
+  font-family: "Dinpro-reg";
   overflow: hidden;
   margin: 5px 0;
 }
 
 #info .major .content:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 #info a {
@@ -472,13 +473,13 @@ section {
 }
 
 #team .col .col-content h4 {
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
   font-size: 32px;
 }
 
 #team .col .col-content p {
   margin-top: 15px;
-  font-family: 'Dinpro-reg';
+  font-family: "Dinpro-reg";
   overflow-y: scroll;
   height: 370px;
 }
@@ -546,7 +547,7 @@ section {
 }
 
 #events .events-banner:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 90%;
   height: 80%;
@@ -569,12 +570,12 @@ section {
 
 #events ul li {
   font-size: 20px;
-  font-family: 'Rockwell-lt';
+  font-family: "Rockwell-lt";
   margin: 0.5em 0;
 }
 
 #events ul li b {
-  font-family: 'Rockwell';
+  font-family: "Rockwell";
 }
 
 #contact {
@@ -660,13 +661,13 @@ form {
 }
 
 ::placeholder {
-  font-family: 'Rockwell-lt';
+  font-family: "Rockwell-lt";
   font-size: 16px;
 }
 
 form label {
   width: 100%;
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
   text-align: center;
   font-size: 18px;
   color: #242021;
@@ -682,16 +683,15 @@ form input {
   background: #2420210e;
 }
 
-input[type='text'] {
-  font-family: 'DINpro';
+input[type="text"] {
+  font-family: "DINpro";
 }
 
 form input:nth-child(2) {
   margin-right: auto;
 }
 
-form input:nth-child(2),
-form input:nth-child(3) {
+form .half-field {
   width: 45.5%;
 }
 
@@ -703,7 +703,7 @@ form textarea {
   resize: none;
   padding: 30px 10px 0;
   margin-top: 10px;
-  font-family: 'Dinpro-reg';
+  font-family: "Dinpro-reg";
   font-size: 16px;
 }
 
@@ -715,20 +715,24 @@ form button {
   border-radius: 5px;
 }
 
-form button[type='reset'] {
+form button[type="reset"] {
   color: #580000;
 }
 
-form button[type='submit'] {
+form button[type="submit"] {
   color: #242021;
 }
 
 #contact footer {
   padding: 50px 0 10px;
-  font-family: 'Dinpro';
+  font-family: "Dinpro";
   font-size: 12px;
   width: 100%;
   color: #242021;
+}
+
+#contact ul li {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -1086,6 +1090,7 @@ form button[type='submit'] {
   #info {
     padding: 0 1em;
     box-sizing: border-box;
+    margin: 50px 0 0;
   }
 
   #info #container h2 {
@@ -1098,6 +1103,10 @@ form button[type='submit'] {
     width: 100%;
     padding: 20px;
     text-align: center;
+  }
+
+  #team {
+    margin-top: 50px;
   }
 
   #team .col {
@@ -1176,17 +1185,17 @@ form button[type='submit'] {
     padding: 10px;
   }
 
-  button[type='reset'] i {
+  button[type="reset"] i {
     font-size: 2.5em;
   }
 
-  button[type='submit'] i {
+  button[type="submit"] i {
     font-size: 3.5em;
   }
 
   #contact {
     padding: 50px 10px;
-    position: fixed;
+    position: relative;
     z-index: -10;
   }
 

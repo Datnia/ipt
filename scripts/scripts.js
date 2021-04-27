@@ -1,15 +1,17 @@
 $(document).ready(function () {
   AOS.init();
 
-  $("#info .content").click(function () {
-    let q = $(this).children("p");
-    if ($(q).hasClass("show")) {
-      $(q).removeClass("show");
-    } else {
-      $("#info .major .content p").removeClass("show");
-      $(q).addClass("show");
-    }
-  });
+  // $("#info .content").click(function () {
+  //   let q = $(this).children("p");
+  //   if ($(q).hasClass("show")) {
+  //     $(q).removeClass("show");
+  //   } else {
+  //     $("#info .major .content p").removeClass("show");
+  //     $(q).addClass("show");
+  //   }
+  // });
+
+  $("#info .content p").addClass("show");
 
   setTimeout(function () {
     $("video").fadeTo(1500, 0.6);
@@ -37,8 +39,6 @@ $(document).ready(function () {
 
   let contactHeight = $("#contact").outerHeight(true);
 
-  $("#team").css("margin-bottom", contactHeight);
-
   if ($(window).width() <= 768) {
     $(window).scroll(function () {
       if ($(window).scrollTop() > $("#team").offset().top) {
@@ -48,6 +48,7 @@ $(document).ready(function () {
       }
     });
   } else {
+    $("#team").css("margin-bottom", contactHeight);
     $(window).scroll(function () {
       if ($(window).scrollTop() > $("#team").offset().top) {
         $("#contact").fadeIn(1500);
@@ -67,7 +68,7 @@ $(document).ready(function () {
   }
 
   if ($(window).width() <= 370) {
-    $("#contact").css("margin-top", -contactHeight);
+    // $("#contact").css("margin-top", -contactHeight);
   }
 
   $(window).scroll(function () {
